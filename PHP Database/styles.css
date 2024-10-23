@@ -1,0 +1,355 @@
+/* General Styles */
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+}
+
+h2, h4{
+    font-size: 2.5em;
+    font-family: 'Arimo', sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+h3, h5 {
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+h7 {
+    font-size: 2.5em;
+    font-family: 'Kanit', sans-serif;
+    color: #f9a3b8;
+}
+
+button {
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Arimo', sans-serif;
+    color: black;
+    background-color: transparent;
+    border: 2px solid DarkSlateBlue;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: DarkSlateBlue;
+    color: white;
+}
+
+#toggle-buttons {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.5em;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    padding: 8px 17px;
+    text-decoration: none;
+    color: #f9a3b8;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #f9a3b8;
+    transform: scale(1.2);
+}
+
+/* Team Section */
+.team-section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.team-section h1 {
+    font-size: 4.1em;
+    margin-bottom: 20px;
+    color: rgb(164, 180, 19);
+}
+
+.team-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: rgb(177, 190, 51);
+}
+
+.team-section h4 {
+    font-size: 2.5em;
+    color: rgb(180, 148, 138);
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: rgb(49, 41, 83);
+    margin: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    flex-basis: 25%;
+    text-align: center;
+    transition: opacity 0.3s ease;
+}
+
+.team-member:hover {
+    opacity: 0.8;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.team-member img:hover {
+    transform: scale(1.2);
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    color: #156bbb;
+    margin: 10px 0 5px;
+}
+
+.team-member h5 {
+    color: rgb(248, 58, 0);
+}
+
+.team-member p {
+    font-size: 1.2em;
+    color: #f40cfc;
+}
+
+/* About Section */
+.about-container {
+    display: block;
+    margin-top: 1rem;
+    background-color: transparent;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: Beige;
+    border-radius: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.about-image {
+    flex: 0 0 220px;
+    margin-right: 2rem;
+}
+
+.about-image img {
+    width: 220px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.about-info {
+    flex: 1;
+    text-align: left;
+}
+
+.about-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+}
+
+.about-info p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #ca24af;
+    font-style: italic;
+}
+
+/* Contacts Section */
+.contact-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: auto;
+    gap: 2rem;
+    margin-top: 1rem;
+    background-color: transparent;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(137, 250, 31, 0.1);
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+}
+
+.contact-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.contact-image img, .contact-imagess img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.contact-imagess img:hover {
+    background-color: rgb(117, 10, 150);
+}
+
+.contact-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Login Overlay */
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(50px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.login-form {
+    background-color: BlueViolet;
+    padding: 150px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: grid;
+    place-items: center;
+}
+
+.login-form h2 {
+    margin-bottom: 10px;
+    font-size: 4.0em;
+    font-family: 'Kanit';
+}
+
+.login-form label {
+    display: block;
+    margin: 10px;
+    font-size: 2.0em;
+}
+
+.login-form input {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: DarkSlateBlue;
+    border: 1px solid #300a3f;
+    font-size: 1.5em;
+    color: aliceblue;
+}
+
+.button-container {
+    display: flex;
+    gap: 70px;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 70;
+}
+
+.button-container button {
+    padding: 15px 35px;
+    border: none;
+    background-color: #46095e;
+    color: white;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #8220a8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    color: wheat;
+    padding: 10px 0;
+    background-color: #2c7ab9;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Hidden Sections */
+.about, .contactss {
+    display: none;
+}

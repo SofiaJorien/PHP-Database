@@ -1,0 +1,144 @@
+
+.navbar {
+    text-align: right;
+     margin-bottom: 2rem;
+ }
+ 
+ .navbar a {
+     margin: 0 1rem;
+     text-decoration: none;
+     color: #14afd6;
+     font-weight: bold;
+     font-size: 3.5rem;
+     transition: color 0.3s ease;
+ }
+ 
+ .navbar a:hover {
+     color: #f9a3b8; 
+ }
+ 
+ .navbar {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 2rem;
+ }
+ 
+
+ .navbar a:hover {
+     color: #f9a3b8; 
+ }
+ 
+ .navbar {
+     display: flex;
+     justify-content: center;
+     margin-bottom: 2rem;
+ }
+ 
+ 
+ .navbar a:hover {
+     color: #f9a3b8;
+ }
+
+.login-form {
+    background-color: BlueViolet;
+    padding: 150px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: grid;
+    place-items: center;
+
+}
+
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(50px);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.login-form h2 {
+    margin-bottom: 10px;
+    font-size: 4.0em;
+    font-family: 'Kanit';
+}
+
+.login-form label {
+    display: block;
+    margin: 10px;
+    font-size: 2.0em;
+    
+}
+
+.login-form input {
+    width: 100%; 
+    max-width: 350px; 
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: DarkSlateBlue;
+    border: 1px solid #300a3f;
+    font-size: 1.5em;
+    color:aliceblue;
+}
+
+.button-container {
+    margin-bottom: 10px;
+    display: flex; 
+    gap: 70px; 
+    justify-content: flex-end; 
+    width: 100%; 
+    margin-right: 70; 
+  }
+  
+  .button-container button {
+    margin-bottom: 10px;
+    padding: 15px 35px; 
+    border: none;
+    background-color: #46095e; 
+    color: white;
+    cursor: pointer;
+  }
+  
+  .button-container button:hover {
+    background-color: #8220a8;
+  }
+  
+
+#close-login {
+    margin-top: 10px;
+    background-color: rgb(44, 16, 16);
+    border: none;
+    visibility: hidden;
+}
+
+#close-login:hover {
+    background-color: darkred;
+}
+
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-image: url('bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#error-message {
+    color: rgba(0, 0, 0, 0.747);
+    font-weight: bold;
+    margin-bottom: 15px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: #483D8B;
+    padding: 10px;
+    border-radius: 5px;
+}

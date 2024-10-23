@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('BG5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #6edfdf;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #04645f;
+}
+p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+strong {
+    color: #555;
+}
+.container input {
+    display: block;
+    width: 100%; 
+    max-width: 350px; 
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: rgb(180, 241, 237);
+    border: 1px solid #300a3f;
+    font-size: 1.5em;
+    color:rgb(3, 34, 61);
+}
+
+label {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
